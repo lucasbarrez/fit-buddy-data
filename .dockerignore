@@ -1,0 +1,9 @@
+.venv/
+.env
+.gitignore
+*/pycache/
+*/.DS_Store/
+.env.exemple
+src/tests/
+.vscode/
+data/
