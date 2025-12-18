@@ -1,0 +1,348 @@
+{
+  "sensors": [
+    {
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Bench Press Sensor A",
+      "machine": "DC_BENCH_001",
+      "position": "center",
+      "installed_at": "2024-06-15T10:00:00Z",
+      "is_active": true
+    },
+    {
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Squat Rack Sensor",
+      "machine": "SQUAT_RACK_001",
+      "position": "bar",
+      "installed_at": "2024-06-15T10:30:00Z",
+      "is_active": true
+    },
+    {
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Leg Press Sensor",
+      "machine": "LEG_PRESS_001",
+      "position": "platform",
+      "installed_at": "2024-07-01T08:00:00Z",
+      "is_active": true
+    }
+  ],
+
+  "sensor_activity": [
+    {
+      "id": 1,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "start_time": "2025-12-18T13:45:00Z",
+      "end_time": null,
+      "activity_type": "bench_press",
+      "set_id": 101
+    },
+    {
+      "id": 2,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "start_time": "2025-12-18T13:20:00Z",
+      "end_time": "2025-12-18T13:32:00Z",
+      "activity_type": "bench_press",
+      "set_id": 100
+    },
+    {
+      "id": 3,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440002",
+      "start_time": "2025-12-18T13:50:00Z",
+      "end_time": null,
+      "activity_type": "squat",
+      "set_id": 201
+    },
+    {
+      "id": 4,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440003",
+      "start_time": "2025-12-18T12:00:00Z",
+      "end_time": "2025-12-18T12:08:00Z",
+      "activity_type": "leg_press",
+      "set_id": 301
+    }
+  ],
+
+  "raw_sensor_data": [
+    {
+      "id": 1,
+      "timestamp": "2025-12-18T13:45:30Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "acc_x": 0.12,
+      "acc_y": 9.78,
+      "acc_z": 0.05,
+      "gyro_x": 0.02,
+      "gyro_y": 0.01,
+      "gyro_z": 0.03,
+      "magna_x": 25.5,
+      "magna_y": -12.3,
+      "magna_z": 45.2
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-12-18T13:46:00Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "acc_x": 2.45,
+      "acc_y": 8.12,
+      "acc_z": 1.23,
+      "gyro_x": 0.85,
+      "gyro_y": 0.32,
+      "gyro_z": 0.15,
+      "magna_x": 26.1,
+      "magna_y": -11.8,
+      "magna_z": 44.9
+    }
+  ],
+
+  "sensor_data": [
+    {
+      "id": 1,
+      "timestamp": "2025-12-18T13:46:00Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "set_id": 101,
+      "rep_index": 1,
+      "rep_duration": 3.2,
+      "rest_time_before": 0.0,
+      "speed_concentric": 0.45,
+      "speed_eccentric": 0.62,
+      "amplitude": 0.85,
+      "difficulty_level": 3,
+      "rep_start_time": "2025-12-18T13:45:30Z",
+      "rep_end_time": "2025-12-18T13:45:33Z",
+      "rep_start_time_concentric": "2025-12-18T13:45:30Z",
+      "rep_end_time_concentric": "2025-12-18T13:45:31Z",
+      "rep_start_time_eccentric": "2025-12-18T13:45:31Z",
+      "rep_end_time_eccentric": "2025-12-18T13:45:33Z",
+      "rep_start_time_isometric": null,
+      "rep_end_time_isometric": null
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-12-18T13:46:30Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "set_id": 101,
+      "rep_index": 2,
+      "rep_duration": 3.5,
+      "rest_time_before": 2.0,
+      "speed_concentric": 0.42,
+      "speed_eccentric": 0.58,
+      "amplitude": 0.83,
+      "difficulty_level": 3,
+      "rep_start_time": "2025-12-18T13:45:35Z",
+      "rep_end_time": "2025-12-18T13:45:38Z",
+      "rep_start_time_concentric": "2025-12-18T13:45:35Z",
+      "rep_end_time_concentric": "2025-12-18T13:45:36Z",
+      "rep_start_time_eccentric": "2025-12-18T13:45:36Z",
+      "rep_end_time_eccentric": "2025-12-18T13:45:38Z",
+      "rep_start_time_isometric": null,
+      "rep_end_time_isometric": null
+    }
+  ],
+
+  "set_summary": [
+    {
+      "set_id": 100,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "start_time": "2025-12-18T13:20:00Z",
+      "end_time": "2025-12-18T13:32:00Z",
+      "total_reps": 10,
+      "total_time_under_tension": 45.5,
+      "avg_difficulty_level": 3.2,
+      "amplitude_mean": 0.82,
+      "amplitude_min": 0.75,
+      "amplitude_max": 0.88,
+      "amplitude_variability": 0.04,
+      "speed_concentric_mean": 0.48,
+      "speed_concentric_min": 0.42,
+      "speed_concentric_max": 0.55,
+      "speed_concentric_variability": 0.03,
+      "speed_eccentric_mean": 0.60,
+      "speed_eccentric_min": 0.55,
+      "speed_eccentric_max": 0.68,
+      "speed_eccentric_variability": 0.04,
+      "speed_isometric_mean": null,
+      "speed_isometric_min": null,
+      "speed_isometric_max": null,
+      "speed_isometric_variability": null
+    },
+    {
+      "set_id": 99,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "start_time": "2025-12-18T13:05:00Z",
+      "end_time": "2025-12-18T13:15:00Z",
+      "total_reps": 8,
+      "total_time_under_tension": 38.2,
+      "avg_difficulty_level": 3.0,
+      "amplitude_mean": 0.80,
+      "amplitude_min": 0.72,
+      "amplitude_max": 0.86,
+      "amplitude_variability": 0.05,
+      "speed_concentric_mean": 0.50,
+      "speed_concentric_min": 0.45,
+      "speed_concentric_max": 0.58,
+      "speed_concentric_variability": 0.04,
+      "speed_eccentric_mean": 0.62,
+      "speed_eccentric_min": 0.58,
+      "speed_eccentric_max": 0.70,
+      "speed_eccentric_variability": 0.03,
+      "speed_isometric_mean": null,
+      "speed_isometric_min": null,
+      "speed_isometric_max": null,
+      "speed_isometric_variability": null
+    },
+    {
+      "set_id": 98,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "start_time": "2025-12-18T12:50:00Z",
+      "end_time": "2025-12-18T13:02:00Z",
+      "total_reps": 12,
+      "total_time_under_tension": 52.0,
+      "avg_difficulty_level": 2.8,
+      "amplitude_mean": 0.84,
+      "amplitude_min": 0.78,
+      "amplitude_max": 0.90,
+      "amplitude_variability": 0.03,
+      "speed_concentric_mean": 0.52,
+      "speed_concentric_min": 0.48,
+      "speed_concentric_max": 0.60,
+      "speed_concentric_variability": 0.03,
+      "speed_eccentric_mean": 0.65,
+      "speed_eccentric_min": 0.60,
+      "speed_eccentric_max": 0.72,
+      "speed_eccentric_variability": 0.04,
+      "speed_isometric_mean": null,
+      "speed_isometric_min": null,
+      "speed_isometric_max": null,
+      "speed_isometric_variability": null
+    },
+    {
+      "set_id": 200,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440002",
+      "start_time": "2025-12-18T13:30:00Z",
+      "end_time": "2025-12-18T13:42:00Z",
+      "total_reps": 6,
+      "total_time_under_tension": 35.0,
+      "avg_difficulty_level": 4.0,
+      "amplitude_mean": 0.95,
+      "amplitude_min": 0.90,
+      "amplitude_max": 1.00,
+      "amplitude_variability": 0.03,
+      "speed_concentric_mean": 0.38,
+      "speed_concentric_min": 0.32,
+      "speed_concentric_max": 0.45,
+      "speed_concentric_variability": 0.04,
+      "speed_eccentric_mean": 0.55,
+      "speed_eccentric_min": 0.50,
+      "speed_eccentric_max": 0.62,
+      "speed_eccentric_variability": 0.03,
+      "speed_isometric_mean": null,
+      "speed_isometric_min": null,
+      "speed_isometric_max": null,
+      "speed_isometric_variability": null
+    },
+    {
+      "set_id": 301,
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440003",
+      "start_time": "2025-12-18T12:00:00Z",
+      "end_time": "2025-12-18T12:08:00Z",
+      "total_reps": 15,
+      "total_time_under_tension": 60.0,
+      "avg_difficulty_level": 2.5,
+      "amplitude_mean": 0.78,
+      "amplitude_min": 0.70,
+      "amplitude_max": 0.85,
+      "amplitude_variability": 0.05,
+      "speed_concentric_mean": 0.55,
+      "speed_concentric_min": 0.50,
+      "speed_concentric_max": 0.62,
+      "speed_concentric_variability": 0.03,
+      "speed_eccentric_mean": 0.68,
+      "speed_eccentric_min": 0.62,
+      "speed_eccentric_max": 0.75,
+      "speed_eccentric_variability": 0.04,
+      "speed_isometric_mean": null,
+      "speed_isometric_min": null,
+      "speed_isometric_max": null,
+      "speed_isometric_variability": null
+    }
+  ],
+
+  "asymmetry_data": [
+    {
+      "id": 1,
+      "timestamp": "2025-12-18T13:32:00Z",
+      "left_sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "right_sensor_id": null,
+      "rep_index": 10,
+      "amplitude_diff": 0.02,
+      "speed_diff": 0.03,
+      "asymmetry_score": 0.85,
+      "right_sensor_id_2": null
+    }
+  ],
+
+  "sensor_status": [
+    {
+      "id": 1,
+      "timestamp": "2025-12-18T13:50:00Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440001",
+      "battery_level": 85,
+      "temperature": 28.5,
+      "signal_strength": 95,
+      "storage_level": 42,
+      "hours_used": 156.5,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-12-18T13:50:00Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440002",
+      "battery_level": 72,
+      "temperature": 27.2,
+      "signal_strength": 88,
+      "storage_level": 35,
+      "hours_used": 203.2,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "timestamp": "2025-12-18T13:50:00Z",
+      "sensor_id": "550e8400-e29b-41d4-a716-446655440003",
+      "battery_level": 95,
+      "temperature": 26.8,
+      "signal_strength": 92,
+      "storage_level": 28,
+      "hours_used": 89.0,
+      "status": "idle"
+    }
+  ],
+
+  "historical_usage_patterns": {
+    "_comment": "Aggregated usage patterns by day and hour for prediction",
+    "DC_BENCH_001": {
+      "monday": {"09:00": 0.8, "10:00": 0.9, "14:00": 0.7, "18:00": 0.95},
+      "tuesday": {"09:00": 0.7, "10:00": 0.85, "14:00": 0.6, "18:00": 0.9},
+      "wednesday": {"09:00": 0.75, "10:00": 0.88, "14:00": 0.65, "18:00": 0.92},
+      "thursday": {"09:00": 0.72, "10:00": 0.82, "14:00": 0.68, "18:00": 0.88},
+      "friday": {"09:00": 0.65, "10:00": 0.78, "14:00": 0.55, "18:00": 0.85},
+      "saturday": {"09:00": 0.5, "10:00": 0.6, "14:00": 0.45, "18:00": 0.55},
+      "sunday": {"09:00": 0.3, "10:00": 0.4, "14:00": 0.35, "18:00": 0.4}
+    },
+    "SQUAT_RACK_001": {
+      "monday": {"09:00": 0.85, "10:00": 0.92, "14:00": 0.75, "18:00": 0.98},
+      "tuesday": {"09:00": 0.78, "10:00": 0.88, "14:00": 0.7, "18:00": 0.95},
+      "wednesday": {"09:00": 0.8, "10:00": 0.9, "14:00": 0.72, "18:00": 0.96},
+      "thursday": {"09:00": 0.76, "10:00": 0.86, "14:00": 0.68, "18:00": 0.92},
+      "friday": {"09:00": 0.7, "10:00": 0.8, "14:00": 0.6, "18:00": 0.88},
+      "saturday": {"09:00": 0.55, "10:00": 0.65, "14:00": 0.5, "18:00": 0.6},
+      "sunday": {"09:00": 0.35, "10:00": 0.45, "14:00": 0.38, "18:00": 0.42}
+    },
+    "LEG_PRESS_001": {
+      "monday": {"09:00": 0.6, "10:00": 0.7, "14:00": 0.55, "18:00": 0.8},
+      "tuesday": {"09:00": 0.55, "10:00": 0.68, "14:00": 0.5, "18:00": 0.78},
+      "wednesday": {"09:00": 0.58, "10:00": 0.72, "14:00": 0.52, "18:00": 0.82},
+      "thursday": {"09:00": 0.52, "10:00": 0.65, "14:00": 0.48, "18:00": 0.75},
+      "friday": {"09:00": 0.48, "10:00": 0.6, "14:00": 0.42, "18:00": 0.7},
+      "saturday": {"09:00": 0.38, "10:00": 0.48, "14:00": 0.35, "18:00": 0.45},
+      "sunday": {"09:00": 0.25, "10:00": 0.32, "14:00": 0.28, "18:00": 0.3}
+    }
+  }
+}
