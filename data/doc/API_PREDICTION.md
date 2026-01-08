@@ -1,5 +1,12 @@
 # Machine Prediction API
 
+## Base URL
+
+⚠️ Replace `localhost:PORT` based on your environment:
+- **Development** (`uv run dev`): `http://localhost:8000`
+- **Docker** (`docker compose up`): `http://localhost:8080`
+- **Deployed**: Cloud service URL
+
 ## Endpoint
 
 ```

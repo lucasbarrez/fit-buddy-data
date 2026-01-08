@@ -1,9 +1,11 @@
 # fit-buddy-data
-This projects aims to study the traffic in gyms. How to predict if the bench will be available for you this Thursday at 1pm ?
+This project aims to study gym traffic. How to predict if the bench will be available for you this Thursday at 1pm?
 
-### Run the project
+## Run the project
 
-You need to have uv installed on your computer then :
+### Development mode
+
+Requires `uv` installed:
 
 ```bash
 cd .../fit-buddy-data 
@@ -11,6 +13,33 @@ uv sync
 uv run dev
 ```
 
-This command will spin off the api on your http://localhost:8000/
+API runs on `http://localhost:8000/`
 
-It's normal if you have an error with the db connexion, it doesn't exist.
+### Docker mode
+
+```bash
+docker compose up
+```
+
+API runs on `http://localhost:8080/`
+
+## Endpoints
+
+### Health check
+```
+GET /
+```
+
+### Machine prediction
+```
+GET /api/machine/{machine_id}/prediction
+```
+
+Example: Check current machine availability
+```bash
+curl -X GET "http://localhost:8080/api/machine/DC_BENCH_001/prediction"
+```
+
+For detailed documentation, see [API_PREDICTION.md](data/Documentation%20pour%20d%C3%A9veloppement/API_PREDICTION.md)
+
+> Note: DB connection errors are normal if the database isn't configured.

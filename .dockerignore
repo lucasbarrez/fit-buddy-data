@@ -6,4 +6,4 @@
 .env.exemple
 src/tests/
 .vscode/
-data/
+data/doc/
