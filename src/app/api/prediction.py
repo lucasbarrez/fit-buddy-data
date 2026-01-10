@@ -10,7 +10,7 @@ from typing import Optional
 from fastapi import APIRouter, HTTPException, Query
 
 from src.models import PredictionResponse, PredictionData, ErrorResponse, RequestType
-from src.algorithm import (
+from src.services import (
     predict_machine_availability_present,
     predict_machine_availability_future,
     get_all_machines,
