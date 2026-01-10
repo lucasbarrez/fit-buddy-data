@@ -6,11 +6,11 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    libcairo2-dev \
-    pkg-config \
-    python3-dev \
-    && rm -rf /var/lib/apt/lists/*
+  gcc \
+  libcairo2-dev \
+  pkg-config \
+  python3-dev \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN --mount=type=cache,target=/root/.cache/uv \
   --mount=type=bind,source=uv.lock,target=uv.lock \
@@ -23,16 +23,9 @@ RUN --mount=type=cache,target=/root/.cache/uv \
   uv sync --locked --no-editable --compile-bytecode
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+  curl \
+  && rm -rf /var/lib/apt/lists/*
 
-# Variables d'environnement par défaut (peuvent être overridées au runtime)
-ENV HOST=0.0.0.0
-ENV PORT=8080
-ENV DEBUG=false
-ENV APP_NAME=FitBuddyPredictor
-ENV ENV=prod
+EXPOSE 8001
 
-EXPOSE 8080
-
-CMD ["uv", "run", "prod"]
+CMD ["uv", "run", "dev"]
